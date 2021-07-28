@@ -1,0 +1,9 @@
+# Intellij
+.idea/
+*.iws
+ 
+# Mac
+ 
+# Maven
+log/
+target/
