@@ -28,7 +28,7 @@ public class Persona {
         this.nombre = nombre;
         this.edad = edad;
         this.sexo = comprobarSexo(sexo);
-        this.dni=generarDni();
+        this.dni = generarDni();
         this.altura = 0;
         this.peso = 0;
     }
@@ -61,7 +61,6 @@ public class Persona {
     public String getDni() {
         return dni;
     }
-
 
 
     public char getSexo() {
@@ -118,13 +117,18 @@ public class Persona {
 
     private String generarDni() {
         int numero;
-        StringBuilder dni= new StringBuilder();
+        StringBuilder dni = new StringBuilder();
         for (int i = 0; i < 8; i++) {
-            numero = (int)(Math.random()*9+0);
+            numero = (int) (Math.random() * 9 + 0);
             dni.append(numero);
         }
         return dni.toString();
     }
+
+    public String edadMomvre() {
+        return edad + nombre;
+    }
+
 
     @Override
     public String toString() {
