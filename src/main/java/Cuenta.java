@@ -15,10 +15,6 @@ public class Cuenta {
         return titular;
     }
 
-    public void setTitular(String titular) {
-        this.titular = titular;
-    }
-
     public double getCantidad() {
         return cantidad;
     }
@@ -45,13 +41,13 @@ public class Cuenta {
     }
 
     public void retirarPlata(double cantidad) {
-        if (this.cantidad-cantidad <0) {
-            this.cantidad=0;
-        }
-        else if (cantidad>0){
-            this.cantidad-=cantidad;
+        if (this.cantidad - cantidad < 0) {
+            this.cantidad = 0;
+        } else if (cantidad > 0) {
+            this.cantidad -= cantidad;
         }
     }
+
 
     //endregion
 
