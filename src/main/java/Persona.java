@@ -93,13 +93,13 @@ public class Persona {
         return resultado;
     }
 
-    public String esPesoIdeal() {
+    public Peso esPesoIdeal() {
         if (calcularIMC() < 20) {
-            return "Esta en su peso ideal";
+            return Peso.IDEAL;
         } else if (calcularIMC() >= 20 && calcularIMC() <= 25) {
-            return "debajo de su peso ideal";
+            return Peso.BAJOPESO;
         } else {
-            return "esta con sobrepeso";
+            return Peso.SOBREPESO;
         }
     }
 
